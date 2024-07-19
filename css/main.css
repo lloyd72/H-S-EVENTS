@@ -47,6 +47,7 @@ nav ul li a {
 main {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
     margin: 40px 100px;
 }
 
@@ -83,6 +84,8 @@ footer {
 footer h1 {
     font-size: 120px; /* Increase the size of H & S EVENTS */
     font-family: 'Inter Tight', sans-serif; /* Change font to Inter Tight */
+    display: block; /* Ensure block display to prevent wrapping */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 footer p {
@@ -96,6 +99,7 @@ footer a {
     font-weight: bold;
 }
 
+/* Media query for screens 1000px and wider */
 @media (min-width: 1000px) {
     main {
         justify-content: space-between;
@@ -111,5 +115,20 @@ footer a {
 
     footer h1 {
         font-size: 150px; /* Further increase the size of H & S EVENTS for larger screens */
+    }
+}
+
+/* Media query for screens below 1100px */
+@media (max-width: 1099px) {
+    main {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .nav-links, .event-planner {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .event-planner {
+        margin-top: 20px; /* Add some space between sections */
     }
 }
