@@ -8,6 +8,8 @@ html, body, ul {
 body {
     font-family: 'Inter Tight', sans-serif;
     background-color: white;
+    transform: scale(1.05); /* Apply zoom to the entire website */
+    transform-origin: top left; /* Ensure the zoom starts from the top left */
 }
 
 header {
@@ -77,12 +79,13 @@ main {
 
 footer {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 40px; /* Increase the margin-top for more space */
     width: 100%;
+    padding: 1px 1px; /* Add padding to the footer */
 }
 
 footer h1 {
-    font-size: 120px; /* Increase the size of H & S EVENTS */
+    font-size: 150px; /* Increase the size of H & S EVENTS */
     font-family: 'Inter Tight', sans-serif; /* Change font to Inter Tight */
     display: block; /* Ensure block display to prevent wrapping */
     white-space: nowrap; /* Prevent text wrapping */
@@ -90,7 +93,7 @@ footer h1 {
 
 footer p {
     font-size: 14px; /* Added style for the copyright text */
-    margin-top: 10px;
+    margin-top: 5px; /* 5px under H & S EVENTS */
 }
 
 footer a {
@@ -114,7 +117,7 @@ footer a {
     }
 
     footer h1 {
-        font-size: 150px; /* Further increase the size of H & S EVENTS for larger screens */
+        font-size: 200px; /* Further increase the size of H & S EVENTS for larger screens */
     }
 }
 
@@ -138,7 +141,7 @@ footer a {
     }
 
     footer h1 {
-        font-size: 150px; /* Further increase the size of H & S EVENTS for larger screens */
+        font-size: 180px; /* Further increase the size of H & S EVENTS for larger screens */
     }
 }
 
@@ -146,6 +149,9 @@ footer a {
 @media (max-width: 809px) {
     .nav-links h1, .event-planner {
         padding-left: 20px; /* Add padding to the left */
+    }
+    footer h1 {
+        font-size: 100px; /* Adjust the size of H & S EVENTS for smaller screens */
     }
 }
 
@@ -169,6 +175,6 @@ footer a {
     }
 
     footer h1 {
-        font-size: 150px; /* Further increase the size of H & S EVENTS for larger screens */
+        font-size: 200px; /* Further increase the size of H & S EVENTS for larger screens */
     }
 }
