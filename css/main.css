@@ -8,16 +8,15 @@ html, body, ul {
 body {
     font-family: 'Inter Tight', sans-serif;
     background-color: white;
-    transform: scale(1.05); /* Apply zoom to the entire website */
+    transform: scale(); /* Apply zoom to the entire website */
     transform-origin: top left; /* Ensure the zoom starts from the top left */
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 48px 48px;
+    padding: 48px;
     align-items: center;
-    position: relative; /* Add position relative to the header */
 }
 
 .header-left {
@@ -32,13 +31,7 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: 16px;
-}
-
-.header-right {
-    position: absolute; /* Position QR code absolutely within the header */
-    top: 48px; /* 48px from the top */
-    right: 48px; /* 48px from the right */
+    font-size: 20px;
 }
 
 .header-right img {
@@ -48,22 +41,23 @@ nav ul li a {
 
 main {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap; /* Enable wrapping for smaller screens */
-    margin: 40px 100px;
+    margin: 30px 88px;
 }
 
 .nav-links {
-    flex: 1;
+    flex: 2;
+    min-width: 200px;
 }
 
 .nav-links h1 {
-    font-size: 30px;
-    margin: 5px 0; /* Close the gaps between the items */
+    font-size: 55px;
+    margin: .1px 0; /* Close the gaps between the items */
 }
 
 .event-planner {
     flex: 1;
+    min-width: 200px;
     text-align: left; /* Align text to the left */
 }
 
@@ -78,28 +72,23 @@ main {
 }
 
 footer {
-    text-align: left;
-    margin-top: 40px; /* Increase the margin-top for more space */
-    width: 100%;
-    padding: 48px 48px; /* Add padding to the footer */
+    text-align: justify;
+    padding: 120px;
     position: relative; /* Ensure the footer is relatively positioned */
 }
 
 footer h1 {
-    font-size: 150px; /* Increase the size of H & S EVENTS */
+    font-size: 200px; /* Large size for H & S EVENTS */
     font-family: 'Inter Tight', sans-serif; /* Change font to Inter Tight */
-    position: absolute;
-    bottom: 48px; /* 48px from the bottom */
-    left: 48px; /* 48px from the left */
-    right: 48px; /* 48px from the right */
-    text-align: center;
+    margin: 0; /* Remove default margin */
+    padding: 100 px;
 }
 
 footer p {
-    font-size: 14px; /* Added style for the copyright text */
+    font-size: 10px;
     position: absolute;
-    bottom: 5px; /* 5px under H & S EVENTS */
-    left: 48px; /* 48px from the left */
+    bottom: 0.px; /* 5px under H & S EVENTS */
+    left: 408px; /* 48px from the left */
 }
 
 footer a {
@@ -108,46 +97,18 @@ footer a {
     font-weight: bold;
 }
 
-/* Media query for screens 1000px and wider */
-@media (min-width: 1000px) {
-    main {
-        justify-content: space-between;
-    }
-
-    .nav-links, .event-planner {
-        width: 45%;
-    }
-
-    footer {
-        margin-top: 100px;
-    }
-
-    footer h1 {
-        font-size: 200px; /* Further increase the size of H & S EVENTS for larger screens */
-    }
-}
-
-/* Media query for screens 810px to 1100px */
-@media (min-width: 810px) and (max-width: 1100px) {
-    main {
-        justify-content: space-between;
-    }
-
-    .nav-links, .event-planner {
-        width: 45%;
-    }
-
+/* Media query for screens below 1100px */
+@media (max-width: 1100px) {
     .event-planner {
-        text-align: left;
-        margin-left: 0; /* Remove padding */
+        order: 1; /* Move event planner below contact */
     }
 
-    footer {
-        margin-top: 100px;
+    .nav-links {
+        order: 0;
     }
 
     footer h1 {
-        font-size: 180px; /* Further increase the size of H & S EVENTS for larger screens */
+        font-size: 100px; /* Adjust the size of H & S EVENTS for smaller screens */
     }
 }
 
@@ -156,31 +117,8 @@ footer a {
     .nav-links h1, .event-planner {
         padding-left: 20px; /* Add padding to the left */
     }
+
     footer h1 {
         font-size: 100px; /* Adjust the size of H & S EVENTS for smaller screens */
-    }
-}
-
-/* Media query for screens 1110px and wider */
-@media (min-width: 1110px) {
-    main {
-        flex-direction: row;
-    }
-
-    .nav-links, .event-planner {
-        width: 45%;
-    }
-
-    .event-planner {
-        text-align: left;
-        margin-left: 0; /* Remove padding */
-    }
-
-    footer {
-        margin-top: 100px;
-    }
-
-    footer h1 {
-        font-size: 200px; /* Further increase the size of H & S EVENTS for larger screens */
     }
 }
