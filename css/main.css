@@ -85,16 +85,17 @@ footer h1 {
     font-family: 'Inter Tight', sans-serif; /* Change font to Inter Tight */
 }
 
-.template-button {
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
+footer p {
+    font-size: 14px; /* Added style for the copyright text */
+    margin-top: 10px;
 }
 
-/* Media query for screens 1000px and wider */
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
 @media (min-width: 1000px) {
     main {
         justify-content: space-between;
