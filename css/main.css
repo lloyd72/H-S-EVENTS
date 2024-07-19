@@ -6,7 +6,7 @@ html, body, ul {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     background-color: white;
 }
 
@@ -32,32 +32,26 @@ nav ul li a {
     font-size: 16px;
 }
 
-.header-right img {
-    width: 50px;
-    height: 50px;
-}
+/* Removed .header-right as QR code is no longer needed */
 
 main {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    justify-content: space-between;
     margin: 40px 100px;
 }
 
 .nav-links {
-    width: 100%;
+    flex: 1;
 }
 
 .nav-links h1 {
-    font-size: 30px; /* Reduced font size */
-    margin: 10px 0;  /* Reduced margin */
+    font-size: 30px;
+    margin: 5px 0; /* Close the gaps between the items */
 }
 
 .event-planner {
-    margin-top: 50px;
-    width: 100%;
-    text-align: just;
+    flex: 1;
+    text-align: left; /* Align text to the left */
 }
 
 .event-planner h2 {
@@ -67,7 +61,7 @@ main {
 
 .event-planner p {
     font-size: 18px;
-    line-height: 1;
+    line-height: 1.2; /* Adjusted line height for better readability */
 }
 
 .icon {
@@ -98,20 +92,11 @@ footer h1 {
 /* Media query for screens 1000px and wider */
 @media (min-width: 1000px) {
     main {
-        flex-direction: row;
         justify-content: space-between;
     }
 
     .nav-links, .event-planner {
         width: 45%;
-    }
-
-    .nav-links {
-        text-align: left;
-    }
-
-    .event-planner {
-        text-align: right;
     }
 
     footer {
