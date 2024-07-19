@@ -131,4 +131,13 @@ footer a {
     .event-planner {
         margin-top: 20px; /* Add some space between sections */
     }
+
+    footer {
+        margin-top: 20px;
+        order: 2; /* Ensure footer is displayed at the bottom */
+    }
+
+    footer h1 {
+        font-size: 24px; /* Adjust the size for smaller screens */
+    }
 }
