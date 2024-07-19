@@ -118,26 +118,57 @@ footer a {
     }
 }
 
-/* Media query for screens below 1100px */
-@media (max-width: 1099px) {
+/* Media query for screens 810px to 1100px */
+@media (min-width: 810px) and (max-width: 1100px) {
     main {
-        flex-direction: column; /* Stack sections vertically */
+        justify-content: space-between;
     }
 
     .nav-links, .event-planner {
-        width: 100%; /* Full width for smaller screens */
+        width: 45%;
     }
 
     .event-planner {
-        margin-top: 20px; /* Add some space between sections */
+        text-align: left;
+        margin-left: 0; /* Remove padding */
     }
 
     footer {
-        margin-top: 20px;
-        order: 2; /* Ensure footer is displayed at the bottom */
+        margin-top: 100px;
     }
 
     footer h1 {
-        font-size: 24px; /* Adjust the size for smaller screens */
+        font-size: 150px; /* Further increase the size of H & S EVENTS for larger screens */
+    }
+}
+
+/* Media query for screens below 810px */
+@media (max-width: 809px) {
+    .nav-links h1, .event-planner {
+        padding-left: 20px; /* Add padding to the left */
+    }
+}
+
+/* Media query for screens 1110px and wider */
+@media (min-width: 1110px) {
+    main {
+        flex-direction: row;
+    }
+
+    .nav-links, .event-planner {
+        width: 45%;
+    }
+
+    .event-planner {
+        text-align: left;
+        margin-left: 0; /* Remove padding */
+    }
+
+    footer {
+        margin-top: 100px;
+    }
+
+    footer h1 {
+        font-size: 150px; /* Further increase the size of H & S EVENTS for larger screens */
     }
 }
