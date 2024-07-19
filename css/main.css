@@ -13,7 +13,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 48px 48px;
     align-items: center;
 }
 
@@ -42,7 +42,7 @@ main {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    margin: 50px 20px;
+    margin: 40px 100px;
 }
 
 .nav-links {
@@ -50,24 +50,24 @@ main {
 }
 
 .nav-links h1 {
-    font-size: 40px; /* Reduced font size */
+    font-size: 30px; /* Reduced font size */
     margin: 10px 0;  /* Reduced margin */
 }
 
 .event-planner {
     margin-top: 50px;
     width: 100%;
-    text-align: right;
+    text-align: just;
 }
 
 .event-planner h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .event-planner p {
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1;
 }
 
 .icon {
@@ -77,7 +77,7 @@ main {
 
 footer {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
     width: 100%;
 }
 
