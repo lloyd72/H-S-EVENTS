@@ -78,22 +78,28 @@ main {
 }
 
 footer {
-    text-align: center;
+    text-align: left;
     margin-top: 40px; /* Increase the margin-top for more space */
     width: 100%;
-    padding: 1px 1px; /* Add padding to the footer */
+    padding: 48px 48px; /* Add padding to the footer */
+    position: relative; /* Ensure the footer is relatively positioned */
 }
 
 footer h1 {
     font-size: 150px; /* Increase the size of H & S EVENTS */
     font-family: 'Inter Tight', sans-serif; /* Change font to Inter Tight */
-    display: block; /* Ensure block display to prevent wrapping */
-    white-space: nowrap; /* Prevent text wrapping */
+    position: absolute;
+    bottom: 48px; /* 48px from the bottom */
+    left: 48px; /* 48px from the left */
+    right: 48px; /* 48px from the right */
+    text-align: center;
 }
 
 footer p {
     font-size: 14px; /* Added style for the copyright text */
-    margin-top: 5px; /* 5px under H & S EVENTS */
+    position: absolute;
+    bottom: 5px; /* 5px under H & S EVENTS */
+    left: 48px; /* 48px from the left */
 }
 
 footer a {
