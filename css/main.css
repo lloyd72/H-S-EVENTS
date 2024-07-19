@@ -1,0 +1,124 @@
+/* Reset some default browser styles */
+html, body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.header-right img {
+    width: 50px;
+    height: 50px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin: 50px 20px;
+}
+
+.nav-links {
+    width: 100%;
+}
+
+.nav-links h1 {
+    font-size: 40px; /* Reduced font size */
+    margin: 10px 0;  /* Reduced margin */
+}
+
+.event-planner {
+    margin-top: 50px;
+    width: 100%;
+    text-align: right;
+}
+
+.event-planner h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.event-planner p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.icon {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+footer h1 {
+    font-size: 120px; /* Increase the size of H & S EVENTS */
+    font-family: 'Inter Tight', sans-serif; /* Change font to Inter Tight */
+}
+
+.template-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Media query for screens 1000px and wider */
+@media (min-width: 1000px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-links, .event-planner {
+        width: 45%;
+    }
+
+    .nav-links {
+        text-align: left;
+    }
+
+    .event-planner {
+        text-align: right;
+    }
+
+    footer {
+        margin-top: 100px;
+    }
+
+    footer h1 {
+        font-size: 150px; /* Further increase the size of H & S EVENTS for larger screens */
+    }
+}
