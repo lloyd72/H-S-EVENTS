@@ -8,8 +8,6 @@ html, body, ul {
 body {
     font-family: 'Inter Tight', sans-serif;
     background-color: white;
-    transform: scale(); /* Apply zoom to the entire website */
-    transform-origin: top left; /* Ensure the zoom starts from the top left */
 }
 
 header {
@@ -72,23 +70,36 @@ main {
 }
 
 footer {
-    text-align: justify;
-    padding: 120px;
+    padding: 48px;
     position: relative; /* Ensure the footer is relatively positioned */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 footer h1 {
-    font-size: 200px; /* Large size for H & S EVENTS */
-    font-family: 'Inter Tight', sans-serif; /* Change font to Inter Tight */
+    font-weight: 900; /* Black weight for the text */
+    font-size: 100%; /* Fit 100% of the container */
+    letter-spacing: 0; /* 0 Em */
+    line-height: 0.8em; /* Line height 0.8 Em */
+    color: #000000; /* Black color */
     margin: 0; /* Remove default margin */
-    padding: 100 px;
+    width: 100%; /* 1fr fill */
+    height: auto; /* Height auto */
+    opacity: 1; /* Opacity 1 */
+    visibility: visible; /* Visible */
+    z-index: 1; /* z-index 1 */
+    transform: rotate(0deg); /* Rotate 0 degrees 2D */
+    position: relative; /* Position relative */
+    text-align: left; /* Align text to the left */
+    padding-left: 48px; /* 48px padding left */
+    padding-right: 48px; /* 48px padding right */
 }
 
 footer p {
-    font-size: 10px;
-    position: absolute;
-    bottom: 0.px; /* 5px under H & S EVENTS */
-    left: 408px; /* 48px from the left */
+    font-size: 14px;
+    margin-top: 5px; /* 5px under H & S EVENTS */
+    padding-left: 48px; /* 48px from the left */
 }
 
 footer a {
@@ -108,7 +119,7 @@ footer a {
     }
 
     footer h1 {
-        font-size: 100px; /* Adjust the size of H & S EVENTS for smaller screens */
+        font-size: 10vw; /* Adjust the size of H & S EVENTS for smaller screens */
     }
 }
 
@@ -119,6 +130,6 @@ footer a {
     }
 
     footer h1 {
-        font-size: 100px; /* Adjust the size of H & S EVENTS for smaller screens */
+        font-size: 12vw; /* Adjust the size of H & S EVENTS for smaller screens */
     }
 }
