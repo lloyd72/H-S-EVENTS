@@ -79,7 +79,7 @@ footer {
 
 footer h1 {
     font-weight: 900; /* Black weight for the text */
-    font-size: 15vw; /* Adjust size to fit footer */
+    font-size: 14vw; /* Adjust size to fit footer */
     letter-spacing: 0; /* 0 Em */
     line-height: 0.8em; /* Line height 0.8 Em */
     color: #000000; /* Black color */
@@ -92,7 +92,7 @@ footer h1 {
     transform: rotate(0deg); /* Rotate 0 degrees 2D */
     position: relative; /* Position relative */
     text-align: left; /* Align text to the left */
-    padding-left: 48px; /* 48px padding left */
+    padding-left: 8px; /* 48px padding left */
     padding-right: 48px; /* 48px padding right */
     word-wrap: break-word; /* Ensure text wraps */
     white-space: pre-wrap; /* Preserve white space and wrap text */
